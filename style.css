@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px; 
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(227, 237, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.main_container{
+    background-color: #fff;
+    width: 380px;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.hero_image{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.title{
+    margin: 2rem 0rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color:hsl(223, 47%, 23%);
+}
+.title_description{
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1rem;
+    color:hsl(224, 23%, 55%);
+}
+
+.subscription_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    margin: 2rem auto;
+    padding: 1em 0em;
+    border-radius: 10px;
+}
+
+.subscription_text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 1;
+}
+.annual_plan{
+    margin: 0;
+    font-weight: 900;
+}
+
+.change_plan a:hover{
+    color: hsl(261, 75%, 52%);
+    text-decoration: none;
+}
+
+.price{
+    margin: 0;
+    margin-top: 0.25rem;
+    color:hsl(224, 23%, 55%);
+}
+
+.payment_button{
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 1.3em 0rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background:  hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow: 0px 5px 30px hsl(224, 23%, 55%);
+    transition: all 300ms;
+}
+
+.payment_button:hover{
+    background: hsl(261, 75%, 52%);
+}
+
+.cancel_button{
+    color:  hsl(224, 23%, 55%);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+.cancel_button:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+
+@media screen and (min-width: 768px){
+
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+}
+
+
+
